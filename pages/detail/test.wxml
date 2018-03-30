@@ -1,0 +1,3 @@
+<!--pages/detail/test.wxml-->
+<text>pages/detail/test.wxml</text>
+<navigator url='another'>to another page</navigator>

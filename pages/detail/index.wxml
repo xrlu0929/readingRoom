@@ -1,0 +1,11 @@
+<!--pages/detail/index.wxml-->
+<!--<text>pages/detail/index.wxml</text>-->
+<!--<navigator url='test'>to test page</navigator>-->
+<view class="container">
+  <text style='padding:20rpx;font-size:20pt;'>~目录~</text>
+  <block wx:for="{{articles}}" wx:for-item="article" wx:key="id">
+    <image data-id="{{article.id}}" src='{{article.cover}}' style='width:550rpx; height:350rpx;margin:20rpx;' mode="aspectFill" bindtap='toDetail'></image>
+    <view data-id="{{article.id}}">{{article.title}}</view>
+    <view style='padding:20rpx;'>{{article.description}}</view>
+  </block>
+</view>

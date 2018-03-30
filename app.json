@@ -1,0 +1,16 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/logs/logs",
+    "pages/detail/index",
+    "pages/detail/test",
+    "pages/detail/another",
+    "pages/detail/content"
+  ],
+  "window": {
+    "backgroundTextStyle": "light",
+    "navigationBarBackgroundColor": "#e2ba84",
+    "navigationBarTitleText": "阅读与提高",
+    "navigationBarTextStyle": "black"
+  }
+}

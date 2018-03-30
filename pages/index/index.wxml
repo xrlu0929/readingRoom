@@ -1,0 +1,24 @@
+<!--index.wxml-->
+<view class="container">
+  <view class="usermotto">
+    <text wx:if="{{!hasUserInfo && canIUse}}" class="user-motto">{{motto}}</text>
+    <block wx:else>
+      <button bindtap='enter_study'>进入书房</button>
+    </block>
+  </view>
+
+  <view class='welcoming_study_area' >
+    <image class='welcoming_study' src='../../images/书房.png'></image>
+  </view> 
+
+  <view class="userinfo">
+    <button wx:if="{{!hasUserInfo && canIUse}}" open-type="getUserInfo" bindgetuserinfo="getUserInfo"> 用户授权</button>
+    
+    <block wx:else>
+      <image bindtap="bindViewTap" class="userinfo-avatar" src="{{userInfo.avatarUrl}}" background-size="cover"></image>
+      <text class="userinfo-nickname">{{userInfo.nickName}}</text>
+    </block>
+
+  </view>
+   
+</view>
